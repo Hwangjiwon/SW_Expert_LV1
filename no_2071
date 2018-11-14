@@ -1,0 +1,31 @@
+package no_2071;
+
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int T;
+		
+		T = sc.nextInt();
+		
+		for(int i=0; i<T; i++) {
+			int arr[] = new int[10];
+			double avg = 0;
+			int result = 0;
+			
+			for(int j=0; j<arr.length; j++) {
+				arr[j] = sc.nextInt();
+				avg += arr[j];
+			}
+	
+			result = (int)Math.round(avg/10);
+			
+			System.out.printf("#%d "+result+"\n",(i+1));
+		}
+		sc.close();
+	}
+
+}
