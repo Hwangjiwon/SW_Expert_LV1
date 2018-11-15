@@ -1,0 +1,27 @@
+package no_2063;
+
+import java.util.Scanner;
+
+public class MainClass {
+	public static void main(String[] args) {
+		int N;
+		Scanner sc = new Scanner(System.in);
+		
+		N = sc.nextInt();
+		if((N % 2 == 0) | (N <= 8) | (N >= 200) ) return;
+		int arr[] = new int[N];
+		for(int i = 0; i < arr.length; i++)
+			arr[i] = sc.nextInt();
+		
+		// quick sort
+		int left = 0;
+		int right = arr.length;
+		//int pivot = arr[(left+right)/2];
+		int pivot = arr[0];
+		
+		
+		
+		
+		sc.close();	
+	}
+}
