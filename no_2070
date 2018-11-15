@@ -1,0 +1,25 @@
+package no_2070;
+
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		
+		for(int i = 0; i < T; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			String result = null;
+			
+			if (a==b)result = "=";
+			else if (a > b) result = ">";
+			else result = "<";
+			
+			System.out.printf("#%d %s\n",(i+1), result );
+		}
+		sc.close();
+	}
+}
